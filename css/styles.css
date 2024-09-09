@@ -492,7 +492,17 @@ a.active {
 
 
 /* ======= INTRODUCTION ======= */
-
+#intro {
+    background: url(../img/Intro.jpg) center center / cover no-repeat fixed;
+    background-color: #000;
+    color: #000;
+    width: 100%;
+    height: 100vh; /* Adjusts the height to fill the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
 #intro {
     background: url(../img/Intro.jpg);
     background-size: cover;
@@ -501,7 +511,7 @@ a.active {
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;
-}
+}*/
 
 #intro .overlay {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
