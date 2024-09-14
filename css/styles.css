@@ -1405,7 +1405,7 @@ a.resume-btn:active {
     width: 100%; /* Ensures the image fills the width of its container */
     height: 200px; /* Sets a fixed height for all images for uniformity */
     max-width: 100%; /* Prevents the image from exceeding the container width */
-    object-fit: cover; /* Ensures the image covers the specified area while maintaining aspect ratio */
+    object-fit: contain; /* Ensures the image contain the specified area while maintaining aspect ratio */
     opacity: 1.0; /* Sets full opacity for images */
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for opacity and transform on hover */
     -moz-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Firefox-specific transition */
