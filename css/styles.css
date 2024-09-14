@@ -1402,13 +1402,22 @@ a.resume-btn:active {
 }
 
 #portfolio .portfolio-item img {
-    max-width: 100%;
-    width: 100%;
-    opacity: 1.0;
-    transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
+    width: 100%; /* Ensures the image fills the width of its container */
+    height: 200px; /* Sets a fixed height for all images for uniformity */
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+    object-fit: cover; /* Ensures the image covers the specified area while maintaining aspect ratio */
+    opacity: 1.0; /* Sets full opacity for images */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for opacity and transform on hover */
+    -moz-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Firefox-specific transition */
+    -webkit-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Webkit-specific transition (Safari, Chrome) */
 }
+
+/* Hover effect for images */
+#portfolio .portfolio-item:hover img {
+    opacity: 0.8; /* Changes opacity on hover for a subtle dimming effect */
+    transform: scale(1.05); /* Slightly scales up the image on hover for a zoom effect */
+}
+
 
 #portfolio .portfolio-overlay {
     position: absolute;
@@ -1921,15 +1930,13 @@ ul.social-buttons li a:active {
 .modal-body p {
     text-align: center;
 }
-
-.modal-body img {
-    width: 300px; /* Set a fixed width for all images */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
-    display: block; /* Makes the image behave like a block-level element */
-    margin: 0 auto; /* Centers the image horizontally */
-}
 /*
+.modal-body img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto;
 .img-centered {
     display: block; 
     margin: 0 auto; 
