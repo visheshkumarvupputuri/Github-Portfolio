@@ -1403,7 +1403,7 @@ a.resume-btn:active {
 
 #portfolio .portfolio-item img {
     width: 100%; /* Ensures the image fills the width of its container */
-    height: 200px; /* Sets a fixed height for all images for uniformity */
+    height: 300px; /* Sets a fixed height for all images for uniformity */
     max-width: 100%; /* Prevents the image from exceeding the container width */
     object-fit: contain; /* Ensures the image contain the specified area while maintaining aspect ratio */
     opacity: 1.0; /* Sets full opacity for images */
