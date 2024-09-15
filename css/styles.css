@@ -1366,7 +1366,7 @@ a.resume-btn:active {
 }
 #portfolio .more-proj {
     margin-bottom: 10px;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 #portfolio .coming-soon {
     margin-bottom: 50px;
